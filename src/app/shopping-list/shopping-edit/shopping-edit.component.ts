@@ -20,8 +20,6 @@ export class ShoppingEditComponent {
   @Output() addIngredient = new EventEmitter<Ingredient>();
 
   onAddIngredient() {
-    console.log(this.nameInputRef.nativeElement.value);
-    console.log(this.amountInputRef.nativeElement.value);
     const name = this.nameInputRef.nativeElement.value;
     const amount = this.amountInputRef.nativeElement.value;
     const newIngredient = new Ingredient(name, amount);
